@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/address-book/static/css/main.10346d24.chunk.css",
+    "main.js": "/address-book/static/js/main.453c9c63.chunk.js",
+    "main.js.map": "/address-book/static/js/main.453c9c63.chunk.js.map",
+    "runtime-main.js": "/address-book/static/js/runtime-main.60ba8be0.js",
+    "runtime-main.js.map": "/address-book/static/js/runtime-main.60ba8be0.js.map",
+    "static/js/2.46476931.chunk.js": "/address-book/static/js/2.46476931.chunk.js",
+    "static/js/2.46476931.chunk.js.map": "/address-book/static/js/2.46476931.chunk.js.map",
+    "index.html": "/address-book/index.html",
+    "precache-manifest.802728322d1a782fd0784be4602bb6ab.js": "/address-book/precache-manifest.802728322d1a782fd0784be4602bb6ab.js",
+    "service-worker.js": "/address-book/service-worker.js",
+    "static/css/main.10346d24.chunk.css.map": "/address-book/static/css/main.10346d24.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60ba8be0.js",
+    "static/js/2.46476931.chunk.js",
+    "static/css/main.10346d24.chunk.css",
+    "static/js/main.453c9c63.chunk.js"
+  ]
+}
