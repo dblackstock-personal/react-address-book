@@ -1,22 +1,28 @@
 .App {
+  display:flex;
+  flex-wrap: wrap;
   text-align: center;
+  width:100%;
 }
 
-.App-logo {
-  height: 40vmin;
+.input{
+  width:100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.record{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  text-align: left;
+  width:100%;
 }
 
-.App-link {
-  color: #09d3ac;
+.record_title{
+  box-sizing: border-box;
+  border-bottom: solid black 1px;
+  width:100%;
+}
+
+.StoredNumber{
+  box-sizing: border-box;
+  width:100%;
 }

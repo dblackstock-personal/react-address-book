@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import StoredNumber from './components/StoredNumber.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+  state = {
+    numbers: [],
+    potentialNumber: ''
+  }
+
+  recordNumber = (event) => {
+    console.log(`recording the number!`);
+    this.setState({
+      potentialNumber: event.target.value
+    })
+  }
+
+  storeNumber = () => {
+    this.setState({
+      numbers: [...this.state.numbers, this.state.potentialNumber],
+      potentialNumber: ''
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className="input">
+          <input value={this.state.potentialNumber} type="number" onChange={this.recordNumber}></input>
+          <button onClick={this.storeNumber}>Save</button>
+        </div>
+        <div className="record">
+          <div className="record_title">My Stored Numbers</div>
+          {/* this loop outputs all the numbers */}
+          {
+            this.state.numbers.map(
+              (number) => {
+                return <StoredNumber number={number} />
+              }
+            )
+          }
+        </div>
+
+      </div>
+    );
+  }
 }
 
 export default App;
